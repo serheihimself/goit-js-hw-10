@@ -34,4 +34,15 @@ input.addEventListener(
     }, DEBOUNCE_DELAY)
   );
 
-  function renderCountryList(countries) {}
+  function renderCountryList(countries) {
+    const markup = countries
+    .map(country => {
+      return `<li>
+      <img src="${country.flags.svg}" alt="Flag of ${
+        country.name.official
+      }" width="30" hight="20">
+         <b>${country.name.official}</p>
+                </li>`;
+    }).join('');
+  countryList.innerHTML = markup;
+  }
