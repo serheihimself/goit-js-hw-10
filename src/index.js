@@ -33,3 +33,5 @@ input.addEventListener(
       }
     }, DEBOUNCE_DELAY)
   );
+
+  function renderCountryList(countries) {}
